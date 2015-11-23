@@ -1,0 +1,36 @@
+.navbar.navbar-default.navbar-fixed-top
+  .navbar-brand.brand_style
+    =link_to 'ChooChoo', root_path
+  %button.navbar-toggle{data: {toggle: 'collapse', target: '.navHeaderCollapse'}}
+    %span.glyphicon.glyphicon-list
+  .container
+    .collapse.navbar-collapse.navHeaderCollapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href: root_path}
+            %span.glyphicon.glyphicon-home Home
+        %li
+          =link_to 'About', pages_about_path
+        %li
+          =link_to 'Help', pages_help_path
+        %li.dropdown
+          %a.dropdown-toggle{data: {toggle: 'dropdown'}, href: '#', role: 'button', aria: {haspopup: 'true', expanded: 'false'}}
+            Social
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              =link_to 'Facebook', '#'
+            %li
+              =link_to 'Instagram', '#'
+        -if user_signed_in?
+          %ul.nav.navbar-nav.pull-right
+            %li
+              %a{href: users_profile_path}
+                %span.glyphicon.glyphicon-user Profile
+            %li
+              =link_to 'Sign out', destroy_user_session_path, method: :delete
+        -else
+          %li.sign_up
+            =link_to 'Sign up', new_user_registration_path
+          %li.sign_in
+            =link_to 'Log in', new_user_session_path
