@@ -17,10 +17,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#color_bg {
+  background-color: white;
+}
+
 .center {
   text-align: center;
 }
 
+#features {
+  text-align: center;
+}
+
+#features img {
+  margin: 0 0 20px;
+}
+
+#clickModal {
+  margin-bottom: 15px;
+}
+
+#inputMessage {
+  margin-bottom: 15px;
+}
 
 .well {
   margin: 20px;
@@ -31,74 +50,56 @@
 }
 
 #myCarousel .item {
-  height: 400px;
+  height: 500px;
 }
 
 #slide1 {
-  background: url('sketch2.jpg') top center no-repeat;
+  background: url('http://xyer.co/wallpaper/13/2/nature-desktop-hd-free-picture.jpg') center no-repeat;
 }
 
 #slide2 {
-  background: url('howls.jpg') top center no-repeat;
+  background: url('http://welovestyles.com/wp-content/uploads/2012/04/superb-summer-day-1920x1080-wallpaper.jpg') center no-repeat;
 }
 
 #slide3 {
-  background: url('daft_punk.jpg') top center no-repeat;
+  background: url('http://webneel.com/wallpaper/sites/default/files/images/04-2013/gorgeous-beach-wallpaper.jpg') center no-repeat;
 }
 
-@media (max-width: 480px) {
-  #myCarousel .item {
-    height: 200px;
+
+
+/* side bar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
   }
-
-  #slide1 {
-    background: url('sketch2.jpg') top center no-repeat;
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
   }
-
-  #slide2 {
-    background: url('howls.jpg') top center no-repeat;
-  }
-
-  #slide3 {
-    background: url('daft_punk.jpg') top center no-repeat;
-  }
-
-
 }
 
-@media (max-width: 768px) {
-  #myCarousel .item {
-    height: 310px;
-  }
-
-  #slide1 {
-    background: url('sketch2.jpg') top center no-repeat;
-  }
-
-  #slide2 {
-    background: url('howls.jpg') top center no-repeat;
-  }
-
-  #slide3 {
-    background: url('daft_punk.jpg') top center no-repeat;
-  }
-
+.gravatar {
+  float: left;
+  margin-right: 10px;
 }
 
-@media (min-width: 1200px) {
-  #myCarousel .item {
-    height: 400px;
-  }
-
-  #slide1 {
-    background: url('sketch2.jpg') top center no-repeat;
-  }
-
-  #slide2 {
-    background: url('howls.jpg') top center no-repeat;
-  }
-
-  #slide3 {
-    background: url('daft_punk.jpg') top center no-repeat;
-  }
+.gravatar_edit {
+  margin-top: 15px;
 }

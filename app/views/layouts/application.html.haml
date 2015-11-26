@@ -11,11 +11,9 @@
 
 %body
   =render 'layouts/header'
-  .container-fluid
-    %p.notice
-      = notice
-    %p.alert
-      = alert
+  .container-fluid#color_bg
+    %p.notice= notice
+    %p.alert= alert
 
     = yield
   =render 'layouts/footer'

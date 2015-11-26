@@ -1,0 +1,100 @@
+<div class="row" id="more_info">
+  <div class="col-sm-6">
+    <h3>My Location</h3>
+    <div class="tabbable">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <h4><span class="glyphicon glyphicon-map-marker"></span>My Location <small>I love where I live :-)</small></h4>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224444.7049426474!2d-81.5088337591582!3d28.481097120751066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C+FL!5e0!3m2!1sen!2sus!4v1448390874292" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </div> <!-- end tab1 -->
+
+        <div class="tab-pane" id="tab2">
+          <h4>Nice Picture! <small>This is a nice little image</small></h4>
+          <%= image_tag 'almost.jpg', width: '50%', height: '200px', class: 'thumbnail pull-left' %>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis, mi sed finibus semper, velit enim ullamcorper tellus, vel convallis ex nunc sit amet lectus. Sed dolor urna, suscipit vitae tortor nec, placerat ornare orci. Fusce semper eleifend nulla et pellentesque. Maecenas tortor justo, vehicula vitae urna fermentum, tristique gravida lorem. Suspendisse hendrerit felis purus, id rutrum tortor luctus ut. Sed nec ullamcorper tortor, nec tempus eros. Morbi sed porttitor leo. Donec molestie nulla neque, a condimentum neque venenatis consectetur. Maecenas non tincidunt ante. Integer at placerat turpis. Morbi varius mauris et consequat iaculis. Ut finibus nunc justo, quis lacinia ante dignissim dapibus. Sed sit amet gravida sapien. Nunc vel tincidunt augue, convallis auctor elit. Proin tincidunt, nisi quis porttitor tempus, lectus mauris blandit sem, a varius mi lorem in eros.</p>
+          <br>
+          <a href="#myModal" id="clickModal" role="button" class="btn btn-info pull-right" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click modal!</a>
+
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Window</h4>
+                </div>
+                <div class="modal-body">
+                  <h4>Text in modal</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                  <h4>Popovers in a modal</h4>
+                  <a href="#" class="btn btn-danger pop">DANGER!</a>
+
+                  <h4>Tooltips in a modal</h4>
+                  <a href="">This link</a> should have a tooltip and so should <a href="">this one</a>
+                  <hr>
+                  <p><small class="text-muted">This form is useless</small></p>
+
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label" for="inputName">Name</label>
+                      <div class="col-lg-10">
+                        <input class="form-control" id="inputName" placeholder="Name" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                      <div class="col-lg-10">
+                        <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                      <div class="col-lg-10">
+                        <textarea class="form-control" id="inputMessage" placeholder="Message" type="text"></textarea>
+                        <button class="btn btn-success pull-right">Send</button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                  <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- end my_modal -->
+        </div>
+      </div>
+    </div>
+
+    </div>
+  <div class="col-sm-6">
+    <h3>Some text info</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis, mi sed finibus semper, velit enim ullamcorper tellus, vel convallis ex nunc sit amet lectus. Sed dolor urna, suscipit vitae tortor nec, placerat ornare orci. Fusce semper eleifend nulla et pellentesque. Maecenas tortor justo, vehicula vitae urna fermentum, tristique gravida lorem. Suspendisse hendrerit felis purus, id rutrum tortor luctus ut. Sed nec ullamcorper tortor, nec tempus eros. Morbi sed porttitor leo. Donec molestie nulla neque, a condimentum neque venenatis consectetur. Maecenas non tincidunt ante. Integer at placerat turpis. Morbi varius mauris et consequat iaculis. Ut finibus nunc justo, quis lacinia ante dignissim dapibus. Sed sit amet gravida sapien. Nunc vel tincidunt augue, convallis auctor elit. Proin tincidunt, nisi quis porttitor tempus, lectus mauris blandit sem, a varius mi lorem in eros.</p>
+    <h4>List group</h4>
+    <div class="list-group">
+      <a href="https://en.wikipedia.org/wiki/Kale" class="list-group-item">
+        <h4 class="list-group-item-heading">Kale</h4>
+        <p class="list-group-item-text">Kale is a great source of vitamins!</p>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Orange" class="list-group-item">
+        <h4 class="list-group-item-heading">Orange</h4>
+        <p class="list-group-item-text">Orange is a great source of vitamins!</p>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Apple" class="list-group-item">
+        <h4 class="list-group-item-heading">Apple</h4>
+        <p class="list-group-item-text">Apple is a great source of vitamins!</p>
+      </a>
+    </div>
+    <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis, mi sed finibus semper, velit enim ullamcorper tellus, vel convallis ex nunc sit amet lectus. Sed dolor urna, suscipit vitae tortor nec, placerat ornare orci. Fusce semper eleifend nulla et pellentesque. Maecenas tortor justo, vehicula vitae urna fermentum, tristique gravida lorem. Suspendisse hendrerit felis purus, id rutrum tortor luctus ut. Sed nec ullamcorper tortor, nec tempus eros. Morbi sed porttitor leo. Donec molestie nulla neque, a condimentum neque venenatis consectetur. Maecenas non tincidunt ante. Integer at placerat turpis. Morbi varius mauris et consequat iaculis. Ut finibus nunc justo, quis lacinia ante dignissim dapibus. Sed sit amet gravida sapien. Nunc vel tincidunt augue, convallis auctor elit. Proin tincidunt, nisi quis porttitor tempus, lectus mauris blandit sem, a varius mi lorem in eros.</p>
+  </div>
+</div>
